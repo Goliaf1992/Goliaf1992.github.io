@@ -195,6 +195,39 @@
 
 </section>
 
+<!-- promotions-timer -->
+
+<div class="promotion">  
+    <div class="promotions-info">
+        Only for our clients! <br>
+        Get tickets with 50% discount! <br>
+        Call now! 333-333-333
+    </div>
+    
+        <div class="promotion__timer">
+            <div class="title">Time remains:</div>
+            <div class="timer">
+                <div class="timer__block">
+                    <span id="days">12</span>
+                    days
+                </div>
+                <div class="timer__block">
+                    <span id="hours">20</span>
+                    hours
+                </div>
+                <div class="timer__block">
+                    <span id="minutes">56</span>
+                    minutes
+                </div>
+                <div class="timer__block">
+                    <span id="seconds">20</span>
+                    seconds
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 <!-- ---------------contact us---------------------- -->
 
@@ -218,62 +251,6 @@
     </div>
 </section>
 
-<!-- --------JavaScript for Toggle Menu---------- -->
-
-    <script>
-        var navLinks = document.getElementById('navLinks');
-        
-        
-        function showMenu() {
-            navLinks.style.width = "350px"
-        }
-
-        function hideMenu() {
-
-            navLinks.style.width = "0px"
-        }
-
-//   JavaScript for facilities
-const facilitiesColumn = document.querySelectorAll('.facilities-column'),
-        menuList = document.querySelectorAll('.menu-list-item'),
-        menuParent = document.querySelector('.menu-list-items');
-
-
-        function hideTabs(){
-            facilitiesColumn.forEach(tab=>{
-                tab.style.display = 'none';
-            });
-
-            menuList.forEach(list=>{
-                list.classList.remove('menu-list-active');
-            });
-        }
-
-        function showTabs(i = 0) {
-
-            facilitiesColumn[i].style.display = 'block';
-            menuList[i].classList.add('menu-list-active');
-        }
-
-        hideTabs();
-        showTabs();
-
-        menuParent.addEventListener('click',(event)=>{
-            const target = event.target;
-            if (target && target.classList.contains('menu-list-item')) {
-                menuList.forEach((item,index)=>{
-                    
-                    if(item == target){
-                        hideTabs();
-                        showTabs(index);
-                    }
-
-                })
-            }
-        })
-        
-
-        </script>
-    
+<script src="script.js"></script>
 </body>
 </html>

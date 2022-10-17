@@ -7,7 +7,7 @@
 
 
 
-/* -------------section-number1----------------- */
+/* -------------section-main----------------- */
 
 .header {
 
@@ -831,6 +831,60 @@ p {
 
 
 }
+
+/* --------------promotions-timer------------- */
+
+
+.promotion {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.promotions-info {
+
+    font-size: 40px;
+    font-weight: bold;
+    border: 5px solid black;
+}
+
+.promotion__timer {
+
+    font-size: 30px;
+    font-weight: bold; 
+    display: flex;
+    
+}
+
+.timer {
+    margin-left: 10px;
+    
+}
+
+#days {
+    background-color: rgb(216, 214, 214);
+    border-radius: 5px;
+}
+
+#hours {
+background-color: rgb(216, 214, 214);
+border-radius: 5px;
+}
+
+ #minutes {
+    background-color: rgb(216, 214, 214);
+    border-radius: 5px;
+}
+
+#seconds {
+    background-color: rgb(216, 214, 214);
+    border-radius: 5px;
+}
+
+
+
 
 
 
