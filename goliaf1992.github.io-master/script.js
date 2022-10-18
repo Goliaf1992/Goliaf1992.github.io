@@ -67,8 +67,8 @@ const deadline = '2022-12-25';
 function calculateTime(endtime){
     const t = Date.parse(endtime) - Date.parse(new Date()),
         days = Math.floor(t/(1000*60*60*24)),
-        hours =  Math.floor((t/1000*60*60)%24),
-        minutes =  Math.floor((t/1000*60)%60),
+        hours =  Math.floor(t/(1000*60*60)%24),
+        minutes =  Math.floor(t/(1000*60)%60),
         seconds = Math.floor((t/1000)%60);
 
         return {
@@ -112,6 +112,43 @@ function setTimer(selector,endtime){
         }
 
         setTimer('.timer',deadline);
+
+
+        // modal window script
+
+        const modalTrigger = document.querySelectorAll('[data-modal]'),
+                modalWindow = document.querySelector('.modal'),
+                modalClosure = modalWindow.querySelector('[data-close]'),
+                section = document.querySelector('section'),
+                contactSection = document.querySelector('.contact-us');
+                
+
+
+                
+modalTrigger[0].addEventListener('click',(e)=>{
+    e.preventDefault();
+   
+document.querySelector('body').style.overflowY = 'hidden';
+    
+    section.append(modalWindow);
+    modalWindow.style.display = 'flex';
+   
+    
+});
+
+modalClosure.addEventListener('click',()=>{
+
+    modalWindow.style.display = 'none';
+});
+
+
+modalTrigger[1].addEventListener('click',(e)=>{
+    e.preventDefault();
+    document.body.style.overflow = 'hidden';
+    contactSection.append(modalWindow);
+    modalWindow.style.display = 'flex';
+    
+});
 
 
 

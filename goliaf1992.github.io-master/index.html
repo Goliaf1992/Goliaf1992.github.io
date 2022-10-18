@@ -37,7 +37,7 @@
             <p>Israel Tours have been on market since 1992. <br>
                Have over 1.000.000 happy customers around the world
             </p>
-            <a href="" class="big-button">Call us to know more</a>
+            <a href="" data-modal class="big-button">Contact us!</a>
         </div>
     </section>
 
@@ -233,7 +233,7 @@
 
 <section class="contact-us" id="puruit-tickets">
     <div class="refs">
-    <a class="big-button"  href="index2.html"> Contact us to pursuit tickets! </a> 
+    <a data-modal class="big-button"  href=""> Contact us! </a> 
     
 </div>
 </section>
@@ -250,6 +250,20 @@
         <i class="fa-brands fa-instagram"></i>
     </div>
 </section>
+
+<!-- -------------------modal-window--------------------------------- -->
+<div class="modal">
+            <form action="#">
+                <div data-close class="modal__close">&times;</div>
+                <p>We will contact you!</p>
+                <input required placeholder="NAME" name="name" type="text" class="modal__input">
+                <input required placeholder="PHONE" name="phone" type="phone" class="modal__input">
+                <button class="btn">Call me</button>
+            </form>
+        </div>
+    
+
+
 
 <script src="script.js"></script>
 </body>
