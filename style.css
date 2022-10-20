@@ -168,34 +168,7 @@ nav img {
 }
 
 
-.text-box {
-    height: 40%;
-    width: 60%;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    
-}
 
-.text-box h1 {
-
-    font-size: 24px;
-    color:#a70606;
-    
-}
-
-.text-box p {
-    max-height: 150px;
-    margin: 10px 0 40px;
-    font-size: 20px;
-    color:#a70606;
-    font-weight: 600;
-    overflow: hidden;
-
-}
 
 
 .big-button {
@@ -296,7 +269,7 @@ form p {
 }
     
 
-/* header----------------------------- */
+
 
 
 /* ------------offers------------ */
@@ -335,7 +308,7 @@ p {
     padding-bottom: 10px;
     text-align: center;
     box-sizing: border-box;
-    color:grey
+    color:rgb(7, 7, 7)
 }
 
 
@@ -355,12 +328,12 @@ p {
     border-radius: 10px;
     flex-basis: 31%;
     box-sizing: border-box;
-    background:rgb(243, 218, 218);
+    background:rgb(228, 60, 60);
     margin: 0%;
     box-sizing: border-box;
     transition: 0.5s;
     margin-bottom: 30px;
-    
+    width: 100%;
 }
 
 .middle-column {
@@ -374,6 +347,15 @@ p {
 
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
+
+.offers-column h3 {
+
+    margin-top: 4px;
+
+
+}
+
+
 
 
 
@@ -403,6 +385,9 @@ p {
     
 }
 
+.big-images-column div {
+border-radius: 20px;}
+
 #img1 {
 
     width: 33.3333333%;
@@ -419,6 +404,8 @@ p {
     height: 100vh;
     background-image: url(images/4.jpg);
     background-size: cover;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #img3 {
@@ -536,35 +523,31 @@ p {
     
     display: flex;
     flex-direction: column;
-    border-left: 2px solid transparent;
+    
     justify-content: space-around;
     
       
 }
 
-.menu-list-items:hover {
-    border-left: solid black 2px;
-    transition: 1s;
-}
+
 
 .menu-list-item {
     
     margin-left: 20px;
     font-size: 24px;
-    border-bottom: 2px solid transparent;
+    border: 2px solid black;
+    border-radius: 10px;
     justify-content: space-around;
-}
-
-
-.menu-list-item:hover{
-    border-bottom: 2px solid black;
-    transition: 1s;
+    padding: 3px;
     cursor: pointer;
+    
     
 }
 
-
-
+.menu-list-item:hover {
+    box-shadow: 1px 5px 5px rgb(14, 13, 13, 0.5);
+    transition: 1s;
+}
 
 
 .facilities-column div {
@@ -972,14 +955,31 @@ h3 {
     color: transparent;
     font-size: 40px;}
 
-    #img3::after {
-        position: relative;
-        
-        content: 'of Israel';
-        text-align: center;
-        justify-content: center;
-        color: transparent;
-        font-size: 40px;}
+#img3::after {
+    position: relative;
+    
+    content: 'of Israel';
+    text-align: center;
+    justify-content: center;
+    color: transparent;
+    font-size: 40px;}
+
+
+
+#img1 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#img2 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#img3 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 
 #img1 {
@@ -1055,6 +1055,22 @@ h1 {
 
     max-width: 250px;
     margin-left:30px;
+    
+}
+
+#img4  {
+
+    border-radius: 20px; 
+}
+
+#img5 {
+
+    border-radius: 20px;
+}
+
+#img6 {
+    border-radius: 20px;
+
 }
 
 .menu-list-item {
@@ -1212,7 +1228,21 @@ border-radius: 5px;
 @media (max-width:390px) {
 
 
-    
+#img1 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#img2 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#img3 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 
         
 .main-h1 {
