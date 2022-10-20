@@ -839,11 +839,16 @@ border-radius: 5px;
 
 @media(max-width:700px) {
 
+
+    #header {
+        text-align: center;
+    }
+
     .main-h1 {
 
         color: #a70606;
-        font-size: 12px;
-      
+        font-size: 24px;
+        padding-top: 50%;
     }
 
 
@@ -1207,12 +1212,17 @@ border-radius: 5px;
 @media (max-width:390px) {
 
 
-    .main-h1 {
+    
+
+        
+.main-h1 {
 
         color: #a70606;
-        font-size: 12px;
-      
+        font-size: 24px;
+        padding-top: 50%;
     }
+
+
 
 .menu-list-item {
 

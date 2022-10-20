@@ -126,6 +126,12 @@ openModal.forEach(element =>{
     });
 });
 
+closeModal.addEventListener('touchstart',()=>{
+    document.querySelector('body').style.overflowY = '';
+    
+    modalWindow.close();
+});
+
 closeModal.addEventListener('click',()=>{
     document.querySelector('body').style.overflowY = '';
     
