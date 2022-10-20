@@ -822,6 +822,10 @@ border-radius: 5px;
 
 @media(max-width:700px) {
 
+    .modal {
+        display: none;
+    }
+
 
     #header {
         text-align: center;
@@ -1179,10 +1183,6 @@ top: -100px;}
 
 
 
-
-
-
-
 .promotion__timer {
 
     font-size: 30px;
@@ -1213,7 +1213,7 @@ border-radius: 5px;
 
 #seconds {
     background-color: rgb(228, 60, 60));
-    border-radius: 5px;
+    border-radius:5px;
 }
 
 
@@ -1226,6 +1226,10 @@ border-radius: 5px;
 
 
 @media (max-width:390px) {
+
+.modal {
+    display: none;
+}
 
 
 #img1 {
@@ -1288,5 +1292,5 @@ border-radius: 5px;
 }
 
     
-    
+
     
