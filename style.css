@@ -416,6 +416,21 @@ border-radius: 20px;}
     background-size: cover;
 }
 
+#img4  {
+
+    border-radius: 20px; 
+}
+
+#img5 {
+
+    border-radius: 20px;
+}
+
+#img6 {
+    border-radius: 20px;
+
+}
+
 
 .images-header {
 
@@ -988,7 +1003,7 @@ h3 {
 
 #img1 {
     width: 100%;
-        
+    
 }
 
 #img2 {
