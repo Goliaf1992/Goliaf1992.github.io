@@ -1136,7 +1136,7 @@ border-radius: 5px;
 /* modal */
 
 .modal {
-
+    z-index: 4;
     max-width:200px;
     max-height:350px;
     width: 200px;
