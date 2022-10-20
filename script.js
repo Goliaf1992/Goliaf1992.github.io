@@ -108,7 +108,8 @@ function setTimer(selector,endtime){
                 submitButton = document.querySelector('#submit');
                 
 
-function showsModalWindow(){
+function showsModalWindow(e){
+    e.preventDefault();
     modalWindow.showModal();
     document.querySelector('body').style.overflowY = 'hidden';
 
