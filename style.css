@@ -257,7 +257,7 @@ form p {
     width: 30%;
     height: 15%;
     background-color: #fff;
-    margin: top 10px;;
+    margin: top 10px;;offers
 }
 
 .modal__input {
@@ -328,33 +328,54 @@ p {
     border-radius: 10px;
     flex-basis: 31%;
     box-sizing: border-box;
-    background:rgb(228, 60, 60);
     margin: 0%;
     box-sizing: border-box;
     transition: 0.5s;
     margin-bottom: 30px;
     width: 100%;
+    padding: 5%;
+    min-width: 180px;
+    min-height: 350px;
 }
 
-.middle-column {
+#column1 {
 
-    margin-left: 5px;
-    margin-right: 5px;
+    background: linear-gradient(45deg, brown, rgb(187, 109, 61));
 }
+
+#column2 {
+
+    background: linear-gradient(45deg, rgb(108, 103, 103), rgb(205, 198, 194));
+}
+
+#column3 {
+
+    background: linear-gradient(45deg, rgb(227, 160, 16), rgb(214, 226, 48));
+    
+
+}
+
 
 
 .offers-column:hover {
-
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+    box-shadow: 10 10px 20px rgba(0,0,0,0.2);
 }
 
 .offers-column h3 {
-
+    
+    font-size: 24px;
     margin-top: 4px;
 
 
 }
 
+
+.offers-column:hover h3 {
+
+    font-size: 32px;
+    transition: 1s;
+}
 
 
 
@@ -692,7 +713,7 @@ font-weight: bold;
 border: 5px solid black;
 padding: 20px;
 border-radius: 10px;
-background-color:#a70606;
+background: linear-gradient(45deg, rgb(227, 160, 16), rgb(214, 226, 48));
 }
 
 .promotions-info :hover {
@@ -714,22 +735,22 @@ margin-left: 10px;
 }
 
 #days {
-background-color: rgb(228, 60, 60);
+background: linear-gradient(45deg, rgb(227, 160, 16), rgb(214, 226, 48));
 border-radius: 5px;
 }
 
 #hours {
-background-color: rgb(228, 60, 60);
+background: linear-gradient(45deg, rgb(227, 160, 16), rgb(214, 226, 48));
 border-radius: 5px;
 }
 
 #minutes {
-background-color: rgb(228, 60, 60);
+background: linear-gradient(45deg, rgb(227, 160, 16), rgb(214, 226, 48));
 border-radius: 5px;
 }
 
 #seconds {
-background-color: rgb(228, 60, 60);
+background: linear-gradient(45deg, rgb(227, 160, 16), rgb(214, 226, 48));
 border-radius: 5px;
 }
 
@@ -837,6 +858,8 @@ border-radius: 5px;
 
 @media(max-width:700px) {
 
+    
+
     .modal {
         display: none;
     }
@@ -936,10 +959,7 @@ h3 {
     
 }
 
-.offers-colum p {
-    font-size: 10px;
-    color: grey;
-}
+
 
 
 .big-images .row {
@@ -1232,7 +1252,13 @@ border-radius: 5px;
 }
 
 
+.offers-colum {
 
+    min-width: 60px;
+    min-height: 120px;
+
+}
+    
 
 
 
@@ -1241,6 +1267,10 @@ border-radius: 5px;
 
 
 @media (max-width:390px) {
+
+
+
+
 
 .modal {
     display: none;
