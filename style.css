@@ -11,6 +11,74 @@ html,body {
    
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    --c: #a70606;
+    color: var(--c);
+    font-size: 12px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 6em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+nav ul li span:nth-child(5) {
+    --n: 5;
+}
+
 
 
 /* -------------section-main----------------- */
@@ -38,7 +106,7 @@ html,body {
 
     .nav-links #icon-menu {
 
-        background-color: #f44336;
+        background-color: #a70606;
         border-radius: 10px;
         width: 30px;
         display: none;
@@ -59,10 +127,10 @@ html,body {
 
     .nav-links ul li {
 
-        list-style: none;    /* deletes decoration for li element*/
-        display: inline-block;  /* display li elements horizontally */
-        padding: 8px 12px;
-        position: relative;
+        /* list-style: none;    */
+        display: inline-block;  
+        /* padding: 8px 12px;
+        position: relative; */
         
 
 
@@ -71,31 +139,22 @@ html,body {
     .nav-links ul li a {
         cursor: pointer;
         text-decoration: none;
-        color: white;
-        font-size: 13px;
+        color:#a70606;
+        
         font-family: 'Poppins', sans-serif;
     }
 
-
-    .nav-links ul li ::after {
-
-        content: '';    
-        width: 0%;
-        height: 2px;
-        background: #f44336;
-        display:block;
-        margin: auto;
-        transition: 0.5s;
+    .nav-links ul li:hover a {
+        cursor: pointer;
+        color:#ffffff;
+        transition: 1s;
         
-
-
+        
     }
 
-    .nav-links ul li:hover ::after {
     
-        width: 100%;
 
-    }
+
 
 
     .text-box {
@@ -1065,16 +1124,25 @@ border-radius: 5px;
     .modal #close-modal {
         position: relative;
         top: 0%;
-        left: 95%;
+        left: 99%;
         transform: translate(-50%, -50%);
+        font-style: bold;
+        width: 20px;
+    }
+
+    #close-modal i {
+        color: #000;
     }
 
     .modal #submit {
 
         margin-top: 5%;
         padding: 4%;
-        
-        
-        
+        font-weight:bold ;
+        width: 50px;
+    }
 
+    #submit i {
+        color: #000;
+        
     }
