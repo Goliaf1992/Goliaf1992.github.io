@@ -1,17 +1,3 @@
-//toggle menu
-
-var navLinks = document.getElementById('navLinks');
-        
-        
-function showMenu() {
-    navLinks.style.width = "350px";
-}
-
-function hideMenu() {
-
-    navLinks.style.width = "0px";
-}
-
 
 
 
