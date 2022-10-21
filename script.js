@@ -1,7 +1,7 @@
 //big-images script
 
 const imagesRow = document.querySelector('big-img-row'),
-        bigImages = document.querySelectorAll('.img'),
+        bigImages = document.querySelectorAll('.img-big'),
         arrowLeft = document.querySelector('#left'),
         arrowRight = document.querySelector('#right');
 
@@ -31,7 +31,7 @@ let countRight = 0;
         console.log(event.dir);
        hideImage();
        countRight++;
-       if (countRight>2){
+       if (countRight>=bigImages.length){
         countRight--;
        }
        showImage(countRight);
