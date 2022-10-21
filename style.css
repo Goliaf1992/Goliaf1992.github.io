@@ -257,14 +257,14 @@ form p {
     width: 30%;
     height: 15%;
     background-color: #fff;
-    margin: top 10px;;offers
+    margin: top 10px;
 }
 
 .modal__input {
 
-    width: 40%;
-    height: 3%;
-    margin: 0%;
+    width:40%;
+    height:3%;
+    margin:0%;
     
 }
     
@@ -315,10 +315,26 @@ p {
 .row {
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
+.offers-list {
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.active {
+    transition: 1s;
+    padding: 2px;
+    border-bottom: 2px solid black;
+    font-size: 34px;
+  background: -webkit-linear-gradient(#eee, rgb(17, 16, 16));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+     
+}
 
 .offers-column {
 
@@ -795,6 +811,7 @@ border-radius: 5px;
 /* modal */
 
 .modal {
+    border-radius: 10px;
     z-index: 4;
     max-width:200px;
     max-height:350px;
@@ -831,10 +848,12 @@ border-radius: 5px;
         transform: translate(-50%, -50%);
         font-style: bold;
         width: 20px;
+        border-radius: 10px;
     }
 
     #close-modal i {
         color: #000;
+        
     }
 
     .modal #submit {
@@ -843,6 +862,7 @@ border-radius: 5px;
         padding: 4%;
         font-weight:bold ;
         width: 50px;
+        border-radius: 20px;
     }
 
     #submit i {

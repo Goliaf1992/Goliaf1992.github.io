@@ -1,4 +1,54 @@
+// script for offers
 
+const offersColumn = document.querySelectorAll('.offers-column'),
+        offersList = document.querySelector('.offers-list'),
+        offerItem = offersList.querySelectorAll('.offers-item');
+
+
+function hideOffers(){
+
+            offersColumn.forEach(column=>{
+            column.style.display = 'none';
+        });
+
+        offerItem.forEach(item=>{
+            item.classList.remove('active');
+        })
+
+    }
+
+        hideOffers();
+
+        function showOffer(i = 0) {
+
+            offersColumn[i].style.display = 'block';
+            offerItem[i].classList.add('active');
+
+        }
+
+        showOffer();
+
+    offersList.addEventListener('click',(event)=>{
+
+            const target = event.target; 
+            if (target && target.classList.contains('offers-item')) {
+                offerItem.forEach((column,index)=>{
+                    
+                    if (column == target) {
+                        hideOffers();
+                        showOffer(index);
+                    }
+
+                });
+            }
+        });
+
+             
+        
+
+
+
+            
 
 
 
@@ -109,7 +159,7 @@ function setTimer(selector,endtime){
                 
 
 function showsModalWindow(e){
-    e.preventDefault();
+    
     modalWindow.showModal();
     document.querySelector('body').style.overflowY = 'hidden';
 
