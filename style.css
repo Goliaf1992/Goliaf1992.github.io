@@ -416,10 +416,17 @@ p {
     
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
+    align-items: center;
     
-    
+}
+
+.big-images-column i {
+
+    height: 10px;
+    width: 10px;
+    color: #000;
 }
 
 .big-images-column div {

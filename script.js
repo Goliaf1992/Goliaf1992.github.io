@@ -1,3 +1,64 @@
+//big-images script
+
+const imagesRow = document.querySelector('big-img-row'),
+        bigImages = document.querySelectorAll('.img'),
+        arrowLeft = document.querySelector('#left'),
+        arrowRight = document.querySelector('#right');
+
+
+
+
+function hideImage(){
+
+        bigImages.forEach(img=>{
+            img.style.display = 'none';
+        });
+    }
+
+    hideImage();
+
+function showImage(i = 0){
+        bigImages[i].style.display = 'block';
+    }
+
+    showImage();
+
+
+
+let countRight = 0;
+
+    arrowRight.addEventListener('click',(event)=>{
+        console.log(event.dir);
+       hideImage();
+       countRight++;
+       if (countRight>2){
+        countRight--;
+       }
+       showImage(countRight);
+        
+    }); 
+
+
+    arrowLeft.addEventListener('click',()=>{
+        countRight--;
+        hideImage();
+        if (countRight < 0) {
+            countRight++;
+        }
+        showImage(countRight);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
 // script for offers
 
 const offersColumn = document.querySelectorAll('.offers-column'),
@@ -13,7 +74,7 @@ function hideOffers(){
 
         offerItem.forEach(item=>{
             item.classList.remove('active');
-        })
+        });
 
     }
 
@@ -42,14 +103,6 @@ function hideOffers(){
                 });
             }
         });
-
-             
-        
-
-
-
-            
-
 
 
 
