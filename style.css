@@ -408,6 +408,15 @@ p {
     text-align: center;
 }
 
+.img-big {
+    width: 33.3333333%;
+    height: 100vh;
+    background-size: cover;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
 
 
 .big-images-column {
@@ -433,32 +442,17 @@ p {
 .big-images-column div {
 border-radius: 20px;}
 
-#img1 {
-
-    width: 33.3333333%;
-    height: 100vh;
-    background-image: url(images/1.jpg);
-    background-size: cover;
-    
-    
+#img1 { 
+    background-image: url(images/1.jpg);  
 }
 
 #img2 {
 
-    width: 33.3333333%;
-    height: 100vh;
     background-image: url(images/4.jpg);
-    background-size: cover;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
-#img3 {
-
-    width: 33.3333333%;
-    height: 100vh;
-    background-image: url(images/6.jpg);
-    background-size: cover;
+#img3 { 
+    background-image: url(images/6.jpg); 
 }
 
 #img4  {
@@ -487,14 +481,7 @@ border-radius: 20px;}
     
 }
 
-.img {
-    opacity:1;
-}
 
-.img:hover {
-    opacity: 1;
-    transition: 1s;
-}
 
 
 #img1::after {
@@ -886,486 +873,141 @@ border-radius: 5px;
 
 @media(max-width:700px) {
 
-    
+    .all-content-container {
+
+        width: 100%;
+    }
+
+    p {
+        color: black;
+        font-size: 10px;
+    }
 
     .modal {
         display: none;
     }
 
+    /* --------header-------- */
 
-    #header {
-        text-align: center;
-    }
-
-    .main-h1 {
-
-        color: #a70606;
-        font-size: 24px;
-        padding-top: 50%;
-    }
-
-
-
-.all-content-container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    .header {
     position: relative;
 }
-.text-box h1 {
 
-    font-size: 20px;
-    
-}
-
-
-.header img {
-    width: 20%;
-}
-
-.nav-links ul li {
-    padding:0;
-    margin:0%;
-    display: block;}
-  
-
-    
-
-.nav-links {
-
-    position: absolute;
-    
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    left:65%;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-}
-
-.nav-links ul {
-    
-    padding: 30px;}
-
-
-
-.offers {
-
-    width: 80%;
-    margin: auto;
-}
-
-.offers h1 {
-    
-    font-size: 24px;
-    margin-bottom: 40px;
-}
-
-.offers-column {
-
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    align-items: center;
-    
-}
-
-.row {
-    flex-direction: column;
-}
-
-
-h3 {
-    
-    font-size: 20px;
-    padding: 20px;
-    margin: 30px;
-    
-    
-}
-
-
-
-
-.big-images .row {
-
-    margin: 0%;
-}
-
-.big-images-column {
-    width: 100%;
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-#img1::after {
-    position: relative;
-    
-    content: 'Explore';
-    text-align: center;
-    justify-content: center;
-    color: transparent;
-    font-size: 40px;
-}
-
-#img2::after {
-    position: relative;
-    
-    content: 'Beauty';
-    text-align: center;
-    justify-content: center;
-    color: transparent;
-    font-size: 40px;}
-
-#img3::after {
-    position: relative;
-    
-    content: 'of Israel';
-    text-align: center;
-    justify-content: center;
-    color: transparent;
-    font-size: 40px;}
-
-
-
-#img1 {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 50%;
-    height: 300px;
-}
-
-#img2 {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 50%;
-    height: 300px;
-}
-
-#img3 {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 50%;
-    height: 300px;
-}
-
-
-
-
-h1 {
-
-    margin-bottom: 400px;
-}
-
-#img2:hover::after {
-
-    color:red;
-    transition: 1s;
-    font-size: 40px;
-    
-}
-
-#img1:hover::after {
-
-    color:red;
-    transition: 1s;
-    font-size: 40px;
-    
-}
-
-#img3:hover::after {
-
-    color:red;
-    transition: 1s;
-    font-size: 40px;
-    
-
-
-}
-    
-
-    
-
-.facilities {
-    width: 100%;
-    text-align: center;
-    
-}
-
-#hotels > div {
-    display: flex;
-}
-
-#hotels > div > div:nth-child(1) > div.content-describer {
-    box-sizing: border-box;
-    font-size: 10px;
-    margin: 20px;
-    max-width: 250px;
-}
-
-.img-facilities {
-
-    max-width: 250px;
-    margin-left:30px;
-    
-}
-
-#img4  {
-
-    border-radius: 20px; 
-}
-
-#img5 {
-
-    border-radius: 20px;
-}
-
-#img6 {
-    border-radius: 20px;
-
-}
-
-.menu-list-item {
-
-    font-size: 20px;
-    margin: 0;
-}
-
-.content-describer {
-    width: 25%;
-}
-
-.facilities-column {
-
-    display: flex;
-    
-    flex-direction: column;
-    margin: 0%;
-}
-
-
-
-h1 {
-
-    margin-bottom: 0px;
-}
-
-p {
-    display: none;
-}
-
-
-.facilities-column div {
-
-
-    height: 400px;
-    width: 300px;
-    
-    
-    }
-
-
-.row {
-display: flex;
-flex-direction: column;
-}
-
-.row i {
-position: relative;
-top: -100px;}
-
-.row h3 {
-
-    position: relative;
-    top: -50px;
-
-}
-
-
-.review-column {
-    max-width: 60rem;
-}
-
-.img {
-
-
-    height: 100px;
-    width: 100px;
-    background-size: cover;
-    margin-right: 15px;
-
-}
-
-
-.clients-review p  {
-
-    font-size: 15px;
-    display: flex;
-    text-align: left;
-}
-
-.clients-review .row {
-
-    margin-left: 15px;
-}
-
-
-
-
-/* --------------promotions-timer------------- */
-
-
-.promotion {
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-between;
-}
-
-.promotion div {
-    font-size: 16px;
-}
-
-
-
-
-.promotion__timer {
-
-    font-size: 30px;
-    font-weight: bold; 
-    display: flex;
-    
-}
-
-.timer {
-    margin-left: 10px;
-    
-}
-
-#days {
-    background-color: rgb(228, 60, 60);
-    border-radius: 5px;
-}
-
-#hours {
-background-color: rgb(228, 60, 60);
-border-radius: 5px;
-}
-
-#minutes {
-    background-color: rgb(228, 60, 60);
-    border-radius: 5px;
-}
-
-#seconds {
-    background-color: rgb(228, 60, 60);
-    border-radius:5px;
-}
-
-
-.offers-colum {
-
-    min-width: 60px;
-    min-height: 120px;
-
-}
-    
-
-
-
-
-
-
-
-@media (max-width:390px) {
-
-
-    .big-images-column {
+    .header img {
         
-        width: 100%;
-        margin: 0%;
+        width:70px;
+        
+    }
+
+    .header nav {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items:center;
     }
 
-    .big-images-column h3 {
-        display: none;
+    
+
+    .header ul {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 16px;
+        margin-top: 15px;
     }
 
 
-.modal {
-    display: none;
-}
+   /* ----------big-images--------- */
 
-
-#img1 {
-    height: 250px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#img2 {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#img3 {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-
+    .big-images-column i {
         
-.main-h1 {
+        display: flex;
+        flex-direction: column;
+    }
 
-        color: #a70606;
-        font-size: 24px;
-        padding-top: 50%;
+    .img-big {
+        width: 150px;
+        height: 400px;
+    }
+    
+
+
+    /* ---------------facilities--------------- */
+
+    .facilities-column div {
+
+
+        height: 350px;
+        width: 150px;
+        margin-bottom: 30px;
+        
+        
+    }
+
+    .content-describer {
+
+    font-size: 15px;
+    }
+
+    /* -----------------clients--------------- */
+
+    .clients-review   {
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+
+    }
+
+    .clients-review h3 {
+
+        font-size: 16px;
+        margin-right:5px;
+        
+    }
+
+    .review-column { 
+
+        margin-bottom: 100px;
+        
+        
+    }
+
+    .img {
+
+        height: 70px;
+        width: 70px;
+        background-size: cover;
+        margin: 5px;
+    }
+
+/* --------------promotion-timer----------- */
+
+    .promotion {
+
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+
+    }
+
+    .promotions-info {
+        height: 360px;
+        width: 170px;
+        margin-bottom: 100px;
+
+    }
+
+    .promotion__timer {
+
+        height: 360px;
+        width: 100px;
+        
     }
 
 
 
-.menu-list-item {
-
-    font-size: 16px;
-    margin-left: 10px;
 }
-
-.promotions-info {
-
-    background-color:rgb(228, 60, 60);
-}
-
-#days {
-    background-color: rgb(228, 60, 60);
-    border-radius: 5px;
-    }
-    
-    #hours {
-    background-color: rgb(228, 60, 60);
-    border-radius: 5px;
-    }
-    
-    #minutes {
-    background-color: rgb(228, 60, 60);
-    border-radius: 5px;
-    }
-    
-    #seconds {
-    background-color: rgb(228, 60, 60);
-    border-radius: 5px;
-    }
-
-}
-
-    
-
-    
