@@ -28,7 +28,7 @@ function showImage(i = 0){
 let countRight = 0;
 
     arrowRight.addEventListener('click',(event)=>{
-        console.log(event.dir);
+        
        hideImage();
        countRight++;
        if (countRight>=bigImages.length){
@@ -258,6 +258,47 @@ window.removeEventListener('scroll',showModalByScroll);
 }
 
 window.addEventListener('scroll',showModalByScroll);
+
+
+
+
+// constructor for columns
+
+class OfferTab {
+    constructor (parentSelector,link) {
+
+       
+       this.parent = document.querySelector(parentSelector);
+       this.link = link;
+       
+    }
+
+    render() {
+
+        const bigImage = document.createElement('div');
+        bigImage.innerHTML =`<div class="img-big">
+        <h3 class="images-header">of Israel</h3>
+    </div>`;
+
+        bigImage.style.backgroundImage = this.link;
+
+        this.parent.append(bigImage);
+
+    }
+}
+
+
+// const img = new OfferTab('.promotion','url(images/9.jpg)');
+
+// img.render();
+
+document.querySelector('.promotion').style.backgroundImage = 'url(images/banner.jpg)';
+document.querySelector('.promotion').style.backgroundSize = 'cover';
+
+
+
+
+
 
 
 

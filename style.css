@@ -10,7 +10,6 @@
 html,body {
     min-height:100%;
     height: 100%;
-
 }
 
 /* -------------section-header----------------- */
@@ -20,6 +19,20 @@ html,body {
     color: #a70606;
     font-size: 45px;
   
+}
+
+.logo-container {
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header img {
+        
+    width: 150px;
+    padding: 30px;
+    
 }
 
 nav ul {
@@ -895,7 +908,8 @@ border-radius: 5px;
 
     .header img {
         
-        width:70px;
+        width: 70px;
+        padding: 10px;
         
     }
 
@@ -903,7 +917,7 @@ border-radius: 5px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items:center;
+        align-items:flex-end;
     }
 
     
@@ -921,15 +935,16 @@ border-radius: 5px;
 
    /* ----------big-images--------- */
 
-    .big-images-column i {
+    .big-images-column  {
         
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
 
     .img-big {
-        width: 150px;
-        height: 400px;
+        width: 100%;
+        height: 300px;
     }
     
 
