@@ -45,7 +45,7 @@ class ImagesFrame extends Rectangle {
 
 //avatar img
 
-let avatar =  new ImagesFrame(300,300,`url(images/23.jpg`,'.info-container',150).render();
+let avatar =  new ImagesFrame(300,300,`url(./images/23.JPG`,'.info-container',150).render();
 avatar.style.backgroundSize = 'cover';
 avatar.style.backgroundPosition = '';
 
@@ -64,7 +64,7 @@ function createImgDiv(arr,arr2,parent) {
     for (let i = 0; i<arr.length;i++){
 
         
-        arr2[i] = new ImagesFrame(400,400,`url(images/${arr[i]}`,`${parent}`,20).render();
+        arr2[i] = new ImagesFrame(400,400,`url(./images/${arr[i]}`,`${parent}`,20).render();
     }
     
     }
