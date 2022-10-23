@@ -115,11 +115,25 @@ function showImg(arr) { //show IMG
 
 let count = 0;
 
-document.querySelector('.img-container').addEventListener('click', function(e) {
+document.querySelector('.portraits').addEventListener('click', function(e) {
     const tgt = e.target; console.log(tgt);
     tgt.classList.toggle('zoomed');
-    if(tgt.classlist.contains('header') { tgt.style.display = 'block'}
-                              
+                             
+    hideImg(portraitsArr);
+    hideImg(peopleArr);
+    count++;
+    if (count>=2){
+        showImg(portraitsArr);
+        showImg(peopleArr);
+        count = 0;
+    }
+    
+});
+
+document.querySelector('.people').addEventListener('click', function(e) {
+    const tgt = e.target; console.log(tgt);
+    tgt.classList.toggle('zoomed');
+                             
     hideImg(portraitsArr);
     hideImg(peopleArr);
     count++;
