@@ -64,7 +64,7 @@ function createImgDiv(arr,arr2,parent) {
     for (let i = 0; i<arr.length;i++){
 
         
-        arr2[i] = new ImagesFrame(400,400,`url(.images/${arr[i]}`,`${parent}`,20).render();
+        arr2[i] = new ImagesFrame(400,400,`url(images/${arr[i]}`,`${parent}`,20).render();
     }
     
     }
