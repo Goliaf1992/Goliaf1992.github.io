@@ -45,7 +45,7 @@ class ImagesFrame extends Rectangle {
 
 //avatar img
 
-let avatar =  new ImagesFrame(300,300,`url(/images/23.JPG`,'.info-container',150).render();
+let avatar =  new ImagesFrame(300,300,`url(.images/23.JPG`,'.info-container',150).render();
 avatar.style.backgroundSize = 'cover';
 avatar.style.backgroundPosition = '';
 
