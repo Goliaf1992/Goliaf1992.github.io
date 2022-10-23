@@ -118,7 +118,8 @@ let count = 0;
 document.querySelector('.img-container').addEventListener('click', function(e) {
     const tgt = e.target; console.log(tgt);
     tgt.classList.toggle('zoomed');
-
+    if(tgt.classlist.contains('header') { tgt.style.display = 'block'}
+                              
     hideImg(portraitsArr);
     hideImg(peopleArr);
     count++;
