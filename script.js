@@ -57,10 +57,10 @@ avatar.style.backgroundPosition = '';
 
 //creates divs for image-container 
 
-let imgURL = ['IMG_0274.jpg','IMG_0275.jpg','IMG_0279.jpg','IMG_0280.jpg','IMG_0281.jpg','IMG_0297.jpg','IMG_0111.jpg','IMG_0145.jpg'];
+let imgURL = ['IMG_0274.JPG','IMG_0275.JPG','IMG_0279.JPG','IMG_0280.JPG','IMG_0281.JPG','IMG_0297.JPG','IMG_0111.JPG','IMG_0145.JPG'];
 let portraitsArr = [];
 
-let imgUrlPeople = ['IMG_0111.jpg','IMG_0113.jpg','IMG_0115.jpg','IMG_0118.jpg','IMG_0119.jpg'];
+let imgUrlPeople = ['IMG_0111.JPG','IMG_0113.JPG','IMG_0115.JPG','IMG_0118.JPG','IMG_0119.JPG'];
 let peopleArr = [];
 
 
