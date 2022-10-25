@@ -1,0 +1,194 @@
+*{
+     font-family: 'Montserrat', sans-serif;
+     color: black;
+}
+
+
+/* -------header-------- */
+
+
+
+
+/* ----------------nav-bar---------------- */
+
+.nav-container {
+
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.nav-container ol {
+    list-style: none;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nav-container ol a {
+    
+    padding: 10px;
+    border:1px, solid, black;
+    text-decoration: none;
+    border-bottom: 1px transparent solid;
+    
+}
+
+.nav-container ol a:hover {
+    
+    transition: 1s;
+    border-bottom: 1px black solid;
+    
+}
+
+ .main:hover {
+    transition: 1s;
+    background-color: rgba(74, 74, 74, 0.5);
+    
+    
+}
+
+
+
+
+.additional-links  {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.active {
+    
+    display: none;
+}
+
+
+
+
+
+/* ---------------------BIO------------------- */
+
+.info-container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20%;
+    
+}
+
+.description {
+    box-sizing: border-box;
+    max-width: 50%;
+    
+}
+
+
+
+/* -------------image-container-------------- */
+
+
+.img-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1%;
+    grid-column-gap: 1%;
+    cursor: pointer;
+
+    
+}
+
+
+
+
+
+.zoomed {
+    
+    transform: scale(1.5);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+
+}
+
+ .header h1 {
+    text-align: center;
+    margin-top:10%;
+    margin-bottom: 10%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.photo-modal {
+    
+    transform: scale(1.5);
+    background-size: cover;
+    width: 30%;
+    height: 50%;
+    border-radius: 20px;
+    border: 0;
+    
+}
+
+.photo-modal::backdrop{
+    background:black;
+    opacity: 0.7;
+}
+
+
+.modal {
+    padding: 3%;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.modal div {
+
+    padding: 3%;
+    margin-top:3%;
+    border-bottom: 1px solid black;
+}
+
+.modal button {
+    margin-top: 40%;
+    padding: 5%;
+    border-radius: 8px;
+    font-weight: bold;
+    
+}
+
+.modal .fa-whatsapp {
+    
+    color: green;
+}
+
+.modal .fa-instagram {
+
+    margin-right: 7%;
+    margin-left: 7%;
+    color: rgb(255, 0, 149);
+
+}
+
+.modal .fa-envelope {
+    color: rgb(92, 92, 251);
+    
+    
+    
+}
+
+
